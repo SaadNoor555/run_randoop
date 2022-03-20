@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form action="/randoop" method="POST">
+        {% csrf_token %}
+        <label for="j_code">Source Code:</label><br>
+        <input type="text" id="j_code" name="j_code" required><br>
+        <label for="e_behavior">Expected Behavior:</label><br>
+        <input type="text" id="e_behavior" name="e_behavior"><br>
+        <input type="submit"  value="upload">
+    </form>
+</body>
+</html>
